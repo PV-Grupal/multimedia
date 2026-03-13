@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(255, 241, 172);
+    justify-content: center;
+    display: flex;
+}
+div{
+    margin: auto;
+    align-self: center;
+    width: 80%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+h1{
+    color: blanchedalmond;
+    font-family: 'OwnFont';
+}
+.titleImg{
+    /* padding: 10%; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
