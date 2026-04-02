@@ -1,31 +1,56 @@
-@font-face {
+@font-face
+{
     font-family: 'OwnFont';
     src: url("Fonts/OwnFont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal
 }
 
-body{
+body
+{
     background-color: rgb(255, 241, 172);
     justify-content: center;
     display: flex;
 }
-div{
+
+div
+{
     margin: auto;
     align-self: center;
     width: 80%;
     height: 100%;
     background-color: cornflowerblue;
 }
-h1{
+
+h1
+{
     color: blanchedalmond;
     font-family: 'OwnFont';
 }
-.titleImg{
+
+.title
+{
+    text-align: center;
+}
+
+.titleImg
+{
     /* padding: 10%; */
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+
+/* Responsive */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Móviles */
+@media screen and (max-width: 768px) {
+    
 }
