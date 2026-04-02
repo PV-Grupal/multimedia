@@ -1,7 +1,7 @@
 @font-face
 {
-    font-family: 'OwnFont';
-    src: url("Fonts/OwnFont.ttf") format('truetype');
+    font-family: 'Nabla';
+    src: url("../fonts/Tiny5-Regular.ttf") format('truetype');
     font-weight: normal;
     font-style: normal
 }
@@ -11,39 +11,80 @@ body
     background-color: rgb(255, 241, 172);
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    font-family: 'Nabla';
+    height: 100%;
+    margin: 0;
 }
 
-div
+a
 {
+    text-decoration: none;
+}
+
+header 
+{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    padding: 10 1rem;
+}
+
+.headerIcon
+{
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+}
+
+.headerRight
+{
+    display: flex;
+    margin-left: auto;
+    text-align: right;
+    gap: 2em;
+    font-size: 19px;
+}
+
+.mainBody
+{
+    background-color: cornflowerblue;
     margin: auto;
-    align-self: center;
     width: 80%;
     height: 100%;
-    background-color: cornflowerblue;
-}
-
-h1
-{
-    color: blanchedalmond;
-    font-family: 'OwnFont';
 }
 
 .title
 {
+    background-color: cornflowerblue;
+    color: blanchedalmond;
     text-align: center;
 }
 
 .titleImg
 {
-    /* padding: 10%; */
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+    width: 80%;
 }
 
-/* Responsive */
+.motto
+{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer
+{
+    background-color: aliceblue;
+    height: 4rem;
+    padding: 10 1rem;
+}
 
 /* Tablets */
 @media screen and (max-width: 1024px) {
