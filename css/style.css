@@ -13,8 +13,10 @@ body
     display: flex;
     flex-direction: column;
     font-family: 'Nabla';
-    height: 100%;
     margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a
@@ -32,8 +34,8 @@ header
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 4rem;
-    padding: 10 1rem;
+    height: 3rem;
+    padding: 1rem;
 }
 
 .headerIcon
@@ -55,35 +57,77 @@ header
 .mainBody
 {
     background-color: cornflowerblue;
-    margin: auto;
+    margin: 0 auto;
     width: 80%;
-    height: 100%;
+    height: auto;
 }
 
 .title
 {
-    background-color: cornflowerblue;
     color: blanchedalmond;
     text-align: center;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.title h1
+{
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .titleImg
 {
     width: 80%;
+    padding: 1rem;
 }
 
-.motto
+.textDescript
 {
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+.videoSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.videoSection video, 
+.videoSection .videoImage {
+    flex: 1;
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.supportTiers
+{
+    text-align: center;
+    padding: 20px;
+}
+
+.supportTiersImg
+{
+    width: 80%;
+    padding: 1rem;
 }
 
 footer
 {
     background-color: aliceblue;
     height: 4rem;
-    padding: 10 1rem;
+    padding: 1rem;
 }
 
 /* Tablets */
