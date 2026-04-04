@@ -8,7 +8,7 @@
 
 body
 {
-    background-color: rgb(255, 241, 172);
+    background-color: #142641;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -22,20 +22,21 @@ body
 a
 {
     text-decoration: none;
+    color: inherit;
 }
 
 header 
 {
-    background-color: aliceblue;
+    background-color: #142641;
     position: sticky;
     top: 0;
     z-index: 1000;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 3rem;
     padding: 1rem;
+    border-bottom: 5px solid #ffd883;
 }
 
 .headerIcon
@@ -43,6 +44,11 @@ header
     height: 90%;
     width: auto;
     object-fit: contain;
+    transition-duration: 0.2s;
+}
+.headerIcon:hover {
+    scale: 1.2;
+    transition-duration: 0.2s;
 }
 
 .headerRight
@@ -54,17 +60,46 @@ header
     font-size: 19px;
 }
 
+.headerRight a {
+    color: #ffd883;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.headerRight a:hover {
+    scale: 1.2;
+    transition-duration: 0.2s;
+}
+
 .mainBody
 {
-    background-color: cornflowerblue;
+    /* background: cornflowerblue; */
     margin: 0 auto;
     width: 80%;
     height: auto;
 }
 
+.mainBody p {
+    color: #ffd883;
+    font-size: 20px;
+}
+
+.headerbg {
+    background: linear-gradient(0deg, #142641, #142641, #6494ed0e), url("../assets/images/bg_temp.png");
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 85%;
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
 .title
 {
-    color: blanchedalmond;
+    color: #ffd883;
     text-align: center;
     padding-top: 5%;
     font-size: 20px;
@@ -72,9 +107,17 @@ header
 
 .title h1
 {
+    font-size: 128px;
+    margin-top: 0px;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
+}
+
+.title h2 {
+    font-size: 64px;
+    margin-top: -100px;
+    margin-bottom: 30px;
 }
 
 .titleImg
@@ -125,9 +168,18 @@ header
 
 footer
 {
-    background-color: aliceblue;
+    background-color: #142641;
+    border-top: 5px solid #ffd883;
     height: 4rem;
     padding: 1rem;
+    color: #ffd883;
+    text-align: center;
+}
+
+#copyright {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: -2px;
 }
 
 /* Tablets */
