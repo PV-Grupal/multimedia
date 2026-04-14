@@ -6,6 +6,7 @@
         <title>Silver Strider</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/images/favicon.png">
+        <script src="js/script.js"></script>
     </head>
     <body>
         <header>
@@ -31,22 +32,56 @@
                 <img class="titleImg" src="assets/images/portada.png" alt="Imagen principal del juego">
             </div>
 
-            <div class="textDescript">
-                <p>
-                    Música
-                </p>
+            <h2 class="separator"><span>AVENTURA</span></h2>
+
+            <div class="feature">
+                <img src="/assets/images/hero.png" alt="">
+                <h2>Sube de nivel a tu personaje</h2>
             </div>
+
+            <div class="feature">
+                <h2>Derrota enemigos temibles</h2>
+                <img src="/assets/images/enemy.png" alt="">
+            </div>
+
+            <h2 class="separator"><span>RANGOS DE PAGO</span></h2>
+
+            <div class="perks">
+                <table class="perks-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="border-top-left-radius: 15px;">Rango 1</th>
+                            <th>Rango 2</th>
+                            <th>Rango 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Se usa un style en línea porque es un arreglo rápido y no se usará más -->
+                            <td class="perk-name" style="border-top-left-radius: 15px;">Acceso al juego</td>
+                            <td class="perk-ok">✔</td>
+                            <td class="perk-ok">✔</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                        <tr>
+                            <td class="perk-name">Skin de Explorador</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-ok">✔</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="separator"><span>MÚSICA</span></h2>
 
             <div class="videoSection">
                 <audio src="assets/sounds/MenuMusic.mp3" controls></audio>
                 <!--<img class="videoImage" src="assets/images/demo.png" alt="Derrota enemigos">-->
             </div>
 
-            <div class="textDescript">
-                <p>
-                    Descripción
-                </p>
-            </div>
+            <h2 class="separator"><span>DESCRIPCIÓN</span></h2>
 
             <div class="supportTiers">
                 <img class="supportTiersImg" src="assets/images/demo.png" alt="Supporter tiers">
@@ -56,17 +91,7 @@
                 <img class="goalsImg" src="assets/images/demo.png" alt="Objetivos a conseguir">
             </div>
 
-            <div class="textDescript">
-                <p>
-                    Foro
-                </p>
-            </div>
-
-            <div class="textDescript">
-                <p>
-                    FAQ
-                </p>
-            </div>
+            <h2 class="separator"><span>F.A.Q.</span></h2>
         </div>
 
         <footer>
