@@ -154,16 +154,136 @@ header
     border-radius: 8px;
 }
 
-.supportTiers, .goals
+.supportTiers
 {
     text-align: center;
     padding: 20px;
 }
 
-.supportTiersImg, .goalsImg
+.supportTiersImg
 {
     width: 80%;
     padding: 1rem;
+}
+
+.goals
+{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.goal-item
+{
+    background-color: rgba(18, 26, 44, 0.6);
+    border: 2px solid #e6dfb4;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.goal-item:hover {
+    scale: 1.05;
+    transition-duration: 0.2s;
+}
+
+.status-icon
+{
+    font-size: 1.5rem;
+    margin-right: 20px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.goal-amount
+{
+    display: block;
+    color: #e6dfb4;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.goal-info p
+{
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.goal-item.completed
+{
+    opacity: 0.7;
+    border-color: #7a755d;
+}
+
+.goal-item.completed .goal-info span
+{
+    text-decoration: line-through;
+}
+
+.goal-item.completed .status-icon
+{
+    color: #4caf50;
+}
+
+.goal-item.active
+{
+    border-width: 3px;
+    box-shadow: 0 0 15px rgba(230, 223, 180, 0.3);
+    transform: scale(1.02);
+}
+
+.goal-item.active .status-icon
+{
+    color: #ffd700;
+}
+
+.goal-item.locked
+{
+    opacity: 0.5;
+    filter: grayscale(1);
+}
+
+.faq
+{
+    color: white;
+    font-size:x-large;
+}
+
+.faq h3
+{
+    background-color: #121a2c;
+    color: white;
+
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 15px 0;
+    margin: 0;
+    text-align: center;
+
+    box-sizing: border-box; 
+}
+
+.faq ul li::before
+{
+    content: "* ";
+    color: #ffd700;
+    margin-right: 5px;
+}
+
+.faq ul
+{
+    list-style: none;
+    padding-left: 0;
 }
 
 footer
