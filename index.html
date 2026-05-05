@@ -15,9 +15,8 @@
             </a>
 
             <div class="headerRight">
-                <a href="#">Contact</a>
-                <a href="#">About us</a>
-                <a href="#">Contribute</a>
+                <a href="#aboutus">Sobre Nosotros</a>
+                <a href="#contact">Contacto</a>
             </div>
         </header>
 
@@ -30,6 +29,9 @@
                 <h2 id="quickstarter">Quickstarter</h2>
                 <h3>"Devuélvele la gloria al reino"</h3>
                 <img class="titleImg" src="assets/images/portada.png" alt="Imagen principal del juego">
+                <h3>• • •</h3>
+                <h3 style="color: white; font-size: larger;">Bajo el pacífico reinado de Segismundo IV, el caballero más fuerte del reino es derrotado por una bruja ancestral de magia oscura. Tras la caída del imperio, despiertas sin poderes ni recuerdos, víctima de un hechizo que borró tu pasado.</h3>
+                <h3>• • •</h3>
             </div>
 
             <h2 class="separator"><span>AVENTURA</span></h2>
@@ -44,6 +46,50 @@
                 <img src="./assets/images/enemy.png" alt="">
             </div>
 
+            <div class="feature">
+                <img src="./assets/images/witch.png" alt="">
+                <h2>Enfréntate a jefes formidables</h2>
+            </div>
+
+            <div class="feature">
+                <h2>Conoce a entrañables personajes</h2>
+                <img src="./assets/images/minero.png" alt="">
+            </div>
+
+            <div class="feature">
+                <img src="./assets/images/glowstone.png" style="width: 128px; height: 128px; margin-right: 32px;">
+                <h2>Recolecta recursos valiosos</h2>
+            </div>
+
+            <h2 class="separator"><span>RESEÑAS</span></h2>
+
+            <div class="carousel-container" id="carousel-1">
+                <div class="carousel-track" id="track">
+                    <div class="review-slide">
+                        <blockquote class="review-text">"El mejor sistema de mecánicas que hemos probado."</blockquote>
+                        <img src="./assets/images/vandal.png" class="press-logo" style="height: 50px;">
+                    </div>
+
+                    <div class="review-slide">
+                        <blockquote class="review-text">"Silver Strider tiene un diseño de personajes increíble."</blockquote>
+                        <img src="./assets/images/rockpapershotgun.png" class="press-logo">
+                    </div>
+
+                    <div class="review-slide">
+                        <blockquote class="review-text">"7.8/10. Too much water."</blockquote>
+                        <img src="./assets/images/ign.png" class="press-logo">
+                    </div>
+
+                    <div class="review-slide">
+                        <blockquote class="review-text">"Como jugador superior que soy, esto juego es la p***a."</blockquote>
+                        <img src="./assets/images/xokas.png" class="press-logo">
+                    </div>
+                </div>
+
+                <!-- Botones de navegación -->
+                <div class="dots-container" id="dots-container"></div>
+            </div>
+
             <h2 class="separator"><span>RANGOS DE PAGO</span></h2>
 
             <div class="perks">
@@ -51,9 +97,9 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th style="border-top-left-radius: 15px;">Rango 1</th>
-                            <th>Rango 2</th>
-                            <th>Rango 3</th>
+                            <th style="border-top-left-radius: 15px;">Versión Base</th>
+                            <th style="color: #ffffa7;">Versión Deluxe</th>
+                            <th style="color: gold;">Versión Ultimate</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -65,13 +111,37 @@
                             <td class="perk-ok">✔</td>
                         </tr>
                         <tr>
-                            <td class="perk-name">Acceso antticipado</td>
+                            <td class="perk-name">Acceso anticipado</td>
                             <td class="perk-none">✖</td>
                             <td class="perk-ok">✔</td>
                             <td class="perk-ok">✔</td>
                         </tr>
                         <tr>
-                            <td class="perk-name">Nueva Skin de protagonista</td>
+                            <td class="perk-name">Banda sonora digital</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-ok">✔</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                        <tr>
+                            <td class="perk-name">Skin de Mago</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-ok">✔</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                        <tr>
+                            <td class="perk-name">Skin de Nigromante</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                        <tr>
+                            <td class="perk-name">Acceso a Jefe Exclusivo</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-none">✖</td>
+                            <td class="perk-ok">✔</td>
+                        </tr>
+                        <tr>
+                            <td class="perk-name">Figura 30cm. del Caballero</td>
                             <td class="perk-none">✖</td>
                             <td class="perk-none">✖</td>
                             <td class="perk-ok">✔</td>
@@ -80,12 +150,11 @@
                 </table>
             </div>
 
-            <h2 class="separator"><span>MÚSICA</span></h2>
+            <!-- <h2 class="separator"><span>MÚSICA</span></h2>
 
             <div class="videoSection">
                 <audio src="assets/sounds/MenuMusic.mp3" controls></audio>
-                <!--<img class="videoImage" src="assets/images/demo.png" alt="Derrota enemigos">-->
-            </div>
+            </div> -->
 
             <h2 class="separator"><span>OBJETIVOS</span></h2>
 
@@ -93,7 +162,7 @@
                 <div class="goal-item completed">
                     <span class="status-icon">✔</span>
                     <div class="goal-info">
-                        <span class="goal-amount">30.000€</span>
+                        <span class="goal-amount">75.000€</span>
                         <p>Financiación básica para realizar el juego</p>
                     </div>
                 </div>
@@ -101,7 +170,7 @@
                 <div class="goal-item active">
                     <span class="status-icon">➤</span>
                     <div class="goal-info">
-                        <span class="goal-amount">40.000€</span>
+                        <span class="goal-amount">80.000€</span>
                         <p>Nuevos enemigos y zonas</p>
                     </div>
                 </div>
@@ -109,22 +178,22 @@
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">50.000€</span>
+                        <span class="goal-amount">90.000€</span>
                         <p>Modo cooperativo local</p>
                     </div>
                 </div>
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">75.000€</span>
-                        <p>DLC Zona submariona</p>
+                        <span class="goal-amount">105.000€</span>
+                        <p>Port a Nintendo Switch, PlayStation 5 y Xbox</p>
                     </div>
                 </div>
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">100.000€</span>
-                        <p>DLC afueras del reino</p>
+                        <span class="goal-amount">120.000€</span>
+                        <p>¿Secuela?</p>
                     </div>
                 </div>
             </div>
@@ -138,18 +207,96 @@
                 </ul>
                 <h3>¿Para qué plataformas se publicará Silver Strider?</h3>
                 <ul>
-                    <li>Silver strider estará disponible para Windows a través de Steam.</li>
+                    <li>Silver Strider estará disponible para Windows a través de Steam y Epic Games Store. Para otras plataformas se publicará en el futuro.</li>
+                </ul>
+                <h3>¿Se puede jugar Silver Strider con mando?</h3>
+                <ul>
+                    <li>Sí, de hecho es el método de entrada que recomendamos usar para jugar Silver Strider.</li>
+                </ul>
+                <h3>¿Cuánto durará la aventura?</h3>
+                <ul>
+                    <li>Depende. Entre 12-20 horas si te centras en la aventura principal. Entre 70-90 horas si buscas completar todos los objetivos del juego.</li>
                 </ul>
             </div>
 
             <h2 class="separator"><span>FORO</span></h2>
 
             <div id="disqus_thread"></div>
+
+            <h2 id="aboutus" class="separator"><span>SOBRE NOSOTROS</span></h2>
+
+            <div class="carousel-container aboutus" id="carousel-2">
+                <div class="carousel-track" id="trackAboutUs">
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/ivan.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"..."</blockquote>
+                            <p style="font-size: 24px;">- Iván Gómez, <cite>Director Principal</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/alvaro_1.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"Lorem ipsum dolor sit amet"</blockquote>
+                            <p style="font-size: 24px;">- Álvaro Aguado, <cite>Programador de Gameplay</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/santi.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"HTML no es un lenguaje de programación."</blockquote>
+                            <p style="font-size: 24px;">- Santiago Salazar, <cite>Programador de Gameplay</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/sara.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"Lorem ipsum dolor sit amet"</blockquote>
+                            <p style="font-size: 24px;">- Sara Uyaban, <cite>Diseño de Personajes</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/manuel.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"Si puedes soñarlo, puedes hacerlo."</blockquote>
+                            <p style="font-size: 24px;">- Manuel Rey, <cite>Diseño de Recursos</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/chris.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"Lo que no te mata, te hace más fuerte."</blockquote>
+                            <p style="font-size: 24px;">- Christian Perea, <cite>Diseño de Interfaces</cite></p>
+                        </div>
+                    </div>
+
+                    <div class="review-slide aboutus">
+                        <img src="./assets/images/avatares/alvaro_1.png" class="press-logo">
+                        <div>
+                            <blockquote class="review-text">"Sin miedo al éxito."</blockquote>
+                            <p style="font-size: 24px;">- Álvaro Herrero, <cite>Compositor</cite></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botones de navegación -->
+                <div class="dots-container" id="dots-container"></div>
+            </div>
+
+            <h2 id="contact" class="separator"><span>CONTACTO</span></h2>
+
         </div>
 
         <footer>
             <h2>All Rights Reserved. 2026 <span id="copyright">©</span> Silver Strider</h2>
-            <h3 style="padding-bottom: 35px;">ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 25/26 Móstoles, URJC. La URJC no se hace responsable del contenido expuesto por el autor.</h3>
+            <h3 id="disclaimer">ATENCIÓN: Esta página simula la campaña de microfinanciación de un videojuego ficticio y no representa un producto real. Práctica de Multimedia, 1º GDDV - Curso 25/26 Móstoles, URJC. La URJC no se hace responsable del contenido expuesto por el autor.</h3>
         </footer>
     </body>
 </html>

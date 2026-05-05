@@ -185,6 +185,7 @@ header
     padding: 15px;
     text-align: left;
     position: relative;
+    transition-duration: 0.2s;
 }
 
 .goal-item:hover {
@@ -260,17 +261,16 @@ header
 {
     background-color: #121a2c;
     color: white;
-
-    width: 100vw;
+    width: 80%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
     padding: 15px 0;
     margin: 0;
     text-align: center;
-
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
 }
 
 .faq ul li::before
@@ -284,6 +284,8 @@ header
 {
     list-style: none;
     padding-left: 0;
+    width: 70%;
+    justify-self: center;
 }
 
 footer
@@ -307,8 +309,6 @@ footer
     color: white;
     align-items: center;
     justify-content: center;
-
-    /* Animación de escala, lo contralará el JavaScript. Empieza a cero. */
     transition: all 0.2s ease-out;
 }
 .feature:hover {
@@ -419,4 +419,81 @@ h2.separator span {
 .perks-table thead tr th:first-child {
     background-color: rgba(255, 255, 255, 0);
     border: 0;
+}
+
+#disclaimer {
+    padding: 0px 60px 35px 60px;
+}
+
+/* ESTILOS DEL CARRUSEL */
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 40px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.aboutus {
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+.review-slide.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-out;
+}
+
+.review-slide.aboutus img {
+    height: 312px;
+}
+
+.review-text {
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.press-logo {
+  height: 100px;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #ffd883;
+  transform: scale(1.2);
 }

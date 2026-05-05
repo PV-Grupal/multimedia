@@ -17,3 +17,42 @@ s.src = 'https://silver-strider.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
+
+// CARRUSEL RESEÑAS
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // Buscamos todos los contenedores de carrusel
+  const allCarousels = document.querySelectorAll('.carousel-container');
+
+  allCarousels.forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.review-slide');
+    const dotsContainer = carousel.querySelector('.dots-container');
+    let currentIndex = 0;
+
+    slides.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if (index === 0) dot.classList.add('active');
+      
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+      });
+      
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = carousel.querySelectorAll('.dot');
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      track.style.transform = `translateX(${offset}%)`;
+
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+  });
+
+});
