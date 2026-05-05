@@ -19,11 +19,19 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 
 function enviar() {
-    Swal.fire({
-        title: "Mensaje enviado",
-        text: "Tu mensaje fue enviado correctamente. ¡Gracias por querer contactar con nosotros!",
-        icon: "success"
-    });
+    if (document.getElementById('email').value == "" || document.getElementById('message').value == "") {
+        Swal.fire({
+            title: "Formulario incompleto",
+            text: "Rellena todos los campos del formulario antes de enviar.",
+            icon: "error"
+        });
+    } else {
+        Swal.fire({
+            title: "Mensaje enviado",
+            text: "Tu mensaje fue enviado correctamente. ¡Gracias por querer contactar con nosotros!",
+            icon: "success"
+        });
+    }
 }
 
 // CARRUSEL RESEÑAS
