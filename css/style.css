@@ -548,7 +548,7 @@ h2.separator span {
   font-size: 1rem;
   box-sizing: border-box;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .form input[type="text"]:focus {
@@ -563,7 +563,7 @@ textarea {
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  font-family: inherit;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   resize: none;
   box-sizing: border-box;

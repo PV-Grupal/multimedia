@@ -18,6 +18,14 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 
+function enviar() {
+    Swal.fire({
+        title: "Mensaje enviado",
+        text: "Tu mensaje fue enviado correctamente. ¡Gracias por querer contactar con nosotros!",
+        icon: "success"
+    });
+}
+
 // CARRUSEL RESEÑAS
 document.addEventListener('DOMContentLoaded', () => {
   

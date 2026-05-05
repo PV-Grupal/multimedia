@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="assets/images/favicon.png">
         <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </head>
     <body>
         <header>
@@ -170,7 +171,7 @@
                 <div class="goal-item active">
                     <span class="status-icon">➤</span>
                     <div class="goal-info">
-                        <span class="goal-amount">80.000€</span>
+                        <span class="goal-amount">100.000€</span>
                         <p>Nuevos enemigos y zonas</p>
                     </div>
                 </div>
@@ -178,21 +179,21 @@
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">90.000€</span>
+                        <span class="goal-amount">130.000€</span>
                         <p>Modo cooperativo local</p>
                     </div>
                 </div>
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">105.000€</span>
+                        <span class="goal-amount">150.000€</span>
                         <p>Port a Nintendo Switch, PlayStation 5 y Xbox</p>
                     </div>
                 </div>
                 <div class="goal-item locked">
                     <span class="status-icon">🔒</span>
                     <div class="goal-info">
-                        <span class="goal-amount">120.000€</span>
+                        <span class="goal-amount">300.000€</span>
                         <p>¿Secuela?</p>
                     </div>
                 </div>
@@ -255,7 +256,7 @@
                     <div class="review-slide aboutus">
                         <img src="./assets/images/avatares/sara.png" class="press-logo">
                         <div>
-                            <blockquote class="review-text">"Lorem ipsum dolor sit amet"</blockquote>
+                            <blockquote class="review-text">"La creatividad es la clave del éxito."</blockquote>
                             <p style="font-size: 24px;">- Sara Uyaban, <cite>Diseño de Personajes</cite></p>
                         </div>
                     </div>
@@ -301,7 +302,7 @@
                     <label for="message">Mensaje <span>(requerido)</span></label>
                     <textarea id="message" placeholder="El mensaje que quieras enviarnos"></textarea>
                     <br>
-                    <button>ENVIAR</button>
+                    <button onclick="enviar()">ENVIAR</button>
                 </form>
             </div>
 
